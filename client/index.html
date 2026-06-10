@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SONGHO Online</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>SONGHO ONLINE</h1>
+
+<div class="panel">
+    <button onclick="createGame()">Créer une partie</button>
+
+    <input id="gameCode" placeholder="Code de partie">
+
+    <button onclick="joinGame()">Rejoindre</button>
+</div>
+
+<div id="status"></div>
+
+<div id="gameArea" style="display:none">
+
+    <h2 id="playerSide"></h2>
+
+    <h3 id="gameStatus"></h3>
+
+    <div class="scores">
+        Nord : <span id="scoreNorth">0</span>
+        |
+        Sud : <span id="scoreSouth">0</span>
+    </div>
+
+    <div id="board">
+
+        <div id="northRow" class="row"></div>
+
+        <hr>
+
+        <div id="southRow" class="row"></div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
