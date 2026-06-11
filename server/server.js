@@ -239,7 +239,7 @@ app.post("/api/game/play", (req, res) => {
 
 
 
-app.listen(PORT, () => {
+app.listen(PORT, 0.0.0.0,() => {
 
     console.log(
         `SONGHO SERVER RUNNING ON PORT ${PORT}`
